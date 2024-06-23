@@ -41,7 +41,7 @@ export default function Footer() {
               I’m happy to hear from budi (we won’t share your data with anyone
               else)
             </label>
-            <MainButton text="join now" bgColor="bg-Rojo" />
+            <MainButton text="join now" bgColor="bg-Rojo" link="/" />
           </div>
         </div>
       </div>
