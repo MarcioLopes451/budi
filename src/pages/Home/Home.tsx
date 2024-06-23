@@ -12,8 +12,12 @@ export default function Home() {
             connecting people who’ve been through{" "}
             <span className="text-white">similar health experiences </span>
           </p>
-          <MainButton text="find a budi" bgColor="bg-Jet" />
-          <MainButton text="be a budi" bgColor="bg-Jet" />
+          <MainButton
+            text="find a budi"
+            bgColor="bg-Jet"
+            link="/budi/findabudi"
+          />
+          <MainButton text="be a budi" bgColor="bg-Jet" link="/budi/beabudi" />
         </div>
       </div>
       {/* Home second Section */}
@@ -23,11 +27,11 @@ export default function Home() {
             <span className="text-Rojo">together </span>
             we are stronger
           </p>
-          <MainButton text="ENDOMETRIOSIS" bgColor="bg-Rojo" />
-          <MainButton text="HYSTERECTOMY" bgColor="bg-Rojo" />
-          <MainButton text="PCOS" bgColor="bg-Rojo" />
-          <MainButton text="EARLY MENOPAUSE" bgColor="bg-Rojo" />
-          <MainButton text="CANCER DIAGNOSIS" bgColor="bg-Rojo" />
+          <MainButton text="ENDOMETRIOSIS" bgColor="bg-Rojo" link="/" />
+          <MainButton text="HYSTERECTOMY" bgColor="bg-Rojo" link="" />
+          <MainButton text="PCOS" bgColor="bg-Rojo" link="" />
+          <MainButton text="EARLY MENOPAUSE" bgColor="bg-Rojo" link="" />
+          <MainButton text="CANCER DIAGNOSIS" bgColor="bg-Rojo" link="" />
           <p>
             Connecting people who have been through similar health experiences
             so those feeling alone and confused can find a friend.{" "}
@@ -61,8 +65,12 @@ export default function Home() {
               no one faces health challenges alone.
             </span>
           </p>
-          <MainButton text="find a budi" bgColor="bg-Jet" />
-          <MainButton text="be a budi" bgColor="bg-Jet" />
+          <MainButton
+            text="find a budi"
+            bgColor="bg-Jet"
+            link="/budi/findabudi"
+          />
+          <MainButton text="be a budi" bgColor="bg-Jet" link="/budi/beabudi" />
         </div>
       </div>
       {/*Home newsletter Section */}
@@ -89,7 +97,7 @@ export default function Home() {
             I’m happy to hear from budi (we won’t share your data with anyone
             else)
           </label>
-          <MainButton text="join now" bgColor="bg-Rojo" />
+          <MainButton text="join now" bgColor="bg-Rojo" link="" />
         </div>
       </div>
     </>

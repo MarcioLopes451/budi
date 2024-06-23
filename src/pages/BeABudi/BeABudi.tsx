@@ -95,10 +95,14 @@ export default function BeABudi() {
           <label>
             {" "}
             <input type="checkbox" name="checkbox" id="checkbox" />
-            Happy to hear from our sister company Our Remedy a female foccused
+            Happy to hear from our sister company Our Remedy a female focused
             wellness brand?
           </label>
-          <MainButton text="be a budi!" bgColor="bg-Rojo" />
+          <MainButton
+            text="be a budi!"
+            bgColor="bg-Rojo"
+            link="/budi/formsubmitted"
+          />
         </div>
       </div>
     </section>

@@ -13,8 +13,8 @@ export default function FormSubmitted() {
             Our Remedy, where you’ll find blogs and videos around women’s health
             that you may find useful.
           </p>
-          <MainButton text="tiktok" bgColor="bg-Rojo" />
-          <MainButton text="blog" bgColor="bg-Rojo" />
+          <MainButton text="tiktok" bgColor="bg-Rojo" link="/" />
+          <MainButton text="blog" bgColor="bg-Rojo" link="/" />
         </div>
       </div>
       <div className="bg-SeaShell text-center pt-[30px] px-[24px] pb-10">
@@ -35,7 +35,7 @@ export default function FormSubmitted() {
             I’m happy to hear from budi (we won’t share your data with anyone
             else)
           </label>
-          <MainButton text="join now" bgColor="bg-Rojo" />
+          <MainButton text="join now" bgColor="bg-Rojo" link="/" />
         </div>
       </div>
     </section>

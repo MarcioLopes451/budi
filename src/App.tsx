@@ -6,6 +6,7 @@ import Footer from "./components/Footer/Footer";
 import FindABudi from "./pages/FindABudi/FindABudi";
 import BeABudi from "./pages/BeABudi/BeABudi";
 import FormSubmitted from "./pages/FormSubmitted/FormSubmitted";
+import OurStory from "./pages/OurStory/OurStory";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/budi/findabudi" element={<FindABudi />} />
           <Route path="/budi/beabudi" element={<BeABudi />} />
           <Route path="/budi/formsubmitted" element={<FormSubmitted />} />
+          <Route path="/budi/ourstory" element={<OurStory />} />
         </Routes>
         <Footer />
       </div>
