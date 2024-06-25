@@ -7,6 +7,9 @@ import FindABudi from "./pages/FindABudi/FindABudi";
 import BeABudi from "./pages/BeABudi/BeABudi";
 import FormSubmitted from "./pages/FormSubmitted/FormSubmitted";
 import OurStory from "./pages/OurStory/OurStory";
+import Members from "./pages/Members/Members";
+import RealStories from "./pages/RealStories/RealStories";
+import Contact from "./pages/Contact/Contact";
 
 function App() {
   return (
@@ -19,6 +22,9 @@ function App() {
           <Route path="/budi/beabudi" element={<BeABudi />} />
           <Route path="/budi/formsubmitted" element={<FormSubmitted />} />
           <Route path="/budi/ourstory" element={<OurStory />} />
+          <Route path="/budi/members" element={<Members />} />
+          <Route path="/budi/realstories" element={<RealStories />} />
+          <Route path="/budi/contact" element={<Contact />} />
         </Routes>
         <Footer />
       </div>
