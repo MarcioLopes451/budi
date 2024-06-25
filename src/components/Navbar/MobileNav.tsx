@@ -24,8 +24,12 @@ export default function MobileNav({ isOpen, onClose }: Nav) {
         <Link to="/budi/ourstory" onClick={closeNav}>
           our story
         </Link>
-        <Link to={"/"}>contact us</Link>
-        <Link to={"/"}>real stories</Link>
+        <Link to="/budi/contact" onClick={closeNav}>
+          contact us
+        </Link>
+        <Link to="/budi/realstories" onClick={closeNav}>
+          real stories
+        </Link>
       </div>
       <button onClick={closeNav}>close</button>
     </div>
