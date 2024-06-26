@@ -10,7 +10,7 @@ export default function MobileNav({ isOpen, onClose }: Nav) {
     return onClose();
   };
   return isOpen ? (
-    <div className="bg-SeaShell mt-10 z-50 w-full fixed left-0">
+    <div className="bg-SeaShell mt-10 z-50 w-full fixed left-0 pb-10">
       <div className="flex justify-start items-start px-[24px] font-Poppins font-bold flex-col gap-5">
         <Link to="/budi/" onClick={closeNav}>
           what we do
@@ -31,7 +31,6 @@ export default function MobileNav({ isOpen, onClose }: Nav) {
           real stories
         </Link>
       </div>
-      <button onClick={closeNav}>close</button>
     </div>
   ) : null;
 }

@@ -13,15 +13,14 @@ export default function Footer() {
         </div>
         <div className="flex flex-col items-center gap-2 text-center w-full">
           <p className="text-Rojo font-Recoleta text-5xl">help</p>
-          <div className="flex justify-between items-center w-full px-4">
+          <div className="flex justify-between items-center w-full">
             {" "}
-            {/* Added px-4 for padding */}
-            <div className="flex items-center flex-col gap-3">
+            <div className="flex items-start flex-col gap-3">
               <p>contact us</p>
               <p>cookies</p>
               <p>terms and conditions</p>
             </div>
-            <div className="flex items-center flex-col gap-3">
+            <div className="flex items-end flex-col gap-3">
               <p>privacy policy</p>
               <p>real life stories</p>
               <p>my account</p>
@@ -37,7 +36,12 @@ export default function Footer() {
             />
             <label>
               {" "}
-              <input type="checkbox" name="checkbox" id="checkbox" />
+              <input
+                type="checkbox"
+                name="checkbox"
+                id="checkbox"
+                className="accent-Thistle"
+              />
               I’m happy to hear from budi (we won’t share your data with anyone
               else)
             </label>
