@@ -6,7 +6,7 @@ export default function BeABudi() {
   return (
     <section className="w-full">
       {/* Intro */}
-      <div className="bg-Pink text-center pt-[30px] px-[24px] pb-10">
+      <div className="bg-Pink text-center pt-[30px] px-[24px] pb-10 md:px-[50px]">
         <div className="flex justify-center items-center flex-col gap-5">
           <p className="text-white font-Recoleta text-5xl">
             <span className="text-Rojo">you’re a </span>good person
@@ -23,7 +23,7 @@ export default function BeABudi() {
       </div>
 
       {/* Form */}
-      <div className="bg-SeaShell pt-[30px] px-[24px] pb-10">
+      <div className="bg-SeaShell pt-[30px] px-[24px] pb-10 md:px-[50px]">
         <div className="flex justify-center items-center flex-col gap-5 text-center">
           <label className="text-Rojo font-Recoleta text-3xl">
             firstly, what’s your name?
@@ -58,7 +58,7 @@ export default function BeABudi() {
       </div>
 
       {/* Location form */}
-      <div className="bg-Pink text-center pt-[30px] px-[24px] pb-10">
+      <div className="bg-Pink text-center pt-[30px] px-[24px] pb-10 md:px-[50px]">
         <div className="flex justify-center items-center flex-col gap-5 text-center">
           <label className="text-Rojo font-Recoleta text-3xl">
             where are you based?
@@ -82,7 +82,7 @@ export default function BeABudi() {
       </div>
 
       {/* Email Form */}
-      <div className="bg-SeaShell pt-[30px] px-[24px] pb-10">
+      <div className="bg-SeaShell pt-[30px] px-[24px] pb-10 md:px-[50px]">
         <div className="flex justify-center items-center flex-col gap-5 text-center">
           <label className="text-Rojo font-Recoleta text-3xl">
             what’s your email?

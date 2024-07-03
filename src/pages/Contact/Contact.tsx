@@ -23,7 +23,7 @@ export default function Contact() {
   }, []);
   return (
     <section className="w-full">
-      <div className="bg-Pink text-center pt-[30px] px-[24px] pb-10">
+      <div className="bg-Pink text-center pt-[30px] px-[24px] pb-10 md:px-[50px]">
         <div className="flex justify-center items-center flex-col gap-5">
           <p className="text-white font-Recoleta text-5xl">
             <span className="text-Rojo">contact </span> us
@@ -33,7 +33,7 @@ export default function Contact() {
           </p>
         </div>
       </div>
-      <div className="bg-SeaShell text-center pt-[30px] px-[24px] pb-10">
+      <div className="bg-SeaShell text-center pt-[30px] px-[24px] pb-10 md:px-[50px] ">
         <div className="flex justify-center items-center flex-col gap-5">
           <form>
             <label className="text-Rojo font-Recoleta text-2xl">name</label>

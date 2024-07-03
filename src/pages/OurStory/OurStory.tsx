@@ -4,7 +4,7 @@ import CEOImg from "../../images/Liverpool April 2021-71.jpg";
 export default function OurStory() {
   return (
     <section className="w-full">
-      <div className="bg-Pink text-center pt-[30px] px-[24px] pb-10">
+      <div className="bg-Pink text-center pt-[30px] px-[24px] pb-10 md:px-[50px]">
         <div className="flex justify-center items-center flex-col gap-5">
           <p className="text-white font-Recoleta text-5xl">
             <span className="text-Rojo"> hey</span> i’m rachel
@@ -15,11 +15,11 @@ export default function OurStory() {
             led to a full hysterectomy and being forced into the menopause, by
             the age of 30.
           </p>
-          <img src={CEOImg} className="rounded-xl" />
+          <img src={CEOImg} className="rounded-xl md:w-[75%]" />
         </div>
       </div>
 
-      <div className="bg-SeaShell pt-[50px] px-[24px] pb-10 -mt-20">
+      <div className="bg-SeaShell pt-[50px] px-[24px] pb-10 -mt-20 md:px-[50px]">
         <div className="flex justify-center items-center flex-col gap-5 text-center">
           <p>
             ...but i haven’t let it hold me back. Instead i decided i would
@@ -46,7 +46,7 @@ export default function OurStory() {
         </div>
       </div>
 
-      <div className="bg-Thistle text-center pt-[30px] px-[24px] pb-10">
+      <div className="bg-Thistle text-center pt-[30px] px-[24px] pb-10 md:px-[50px]">
         <div className="flex justify-center items-center flex-col gap-5">
           <p className="text-white font-Recoleta text-5xl">
             <span className="text-Rojo">support</span> from me
@@ -55,8 +55,14 @@ export default function OurStory() {
             I blog and TikTok a lot on my health experiences, which you can find
             here. Come say hi!
           </p>
-          <MainButton text="tiktok" bgColor="bg-Rojo" link="/" />
-          <MainButton text="blog" bgColor="bg-Rojo" link="/" />
+          <div className="flex justify-center items-center flex-col gap-5 md:justify-between md:flex-row w-full">
+            <MainButton
+              text="tiktok"
+              bgColor="bg-Rojo"
+              link="/budi/findabudi"
+            />
+            <MainButton text="blog" bgColor="bg-Rojo" link="/budi/beabudi" />
+          </div>
         </div>
       </div>
     </section>
