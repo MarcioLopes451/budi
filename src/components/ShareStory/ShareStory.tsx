@@ -22,7 +22,7 @@ export default function ShareStory() {
     };
   }, []);
   return (
-    <div className="bg-Pink text-center pt-[30px] px-[24px] pb-10">
+    <div className="bg-Pink text-center pt-[30px] px-[24px] pb-10 md:px-[50px]">
       <div className="flex justify-center items-center flex-col gap-5">
         <p className="text-Rojo font-Recoleta text-5xl">share your story</p>
         <p className="text-white">
@@ -37,7 +37,7 @@ export default function ShareStory() {
           might be going through the same thing
         </p>
       </div>
-      <form className="flex justify-start items-center flex-col mt-10">
+      <form className="flex justify-start items-center flex-col mt-10 md:px-[50px]">
         <label className="text-Rojo font-Recoleta text-2xl">name</label>
         <input
           type="text"

@@ -1,7 +1,7 @@
 export default function Members() {
   return (
     <section className="w-full">
-      <div className="bg-Pink text-center pt-[30px] px-[24px] pb-10">
+      <div className="bg-Pink text-center pt-[30px] px-[24px] pb-10 md:px-[50px]">
         <div className="flex justify-center items-center flex-col gap-5">
           <p className="text-white font-Recoleta text-5xl">
             <span className="text-Rojo">hey </span> budi
@@ -11,7 +11,7 @@ export default function Members() {
           </p>
         </div>
       </div>
-      <div className="bg-SeaShell text-center pt-[30px] px-[24px] pb-10">
+      <div className="bg-SeaShell text-center pt-[30px] px-[24px] pb-10 md:px-[50px]">
         <div className="flex justify-center items-center flex-col gap-5">
           <p className="text-Rojo font-Recoleta text-5xl">
             chat with your budi

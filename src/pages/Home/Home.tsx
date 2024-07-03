@@ -1,51 +1,82 @@
 import MainButton from "../../components/MainButton/MainButton";
+import Illness from "../../components/thinkofnamelater/Illness";
 import OurRemedyImg from "../../images/Logo_dark purple_website.png";
+import { useState, useEffect } from "react";
 
 export default function Home() {
+  const [width, setWidth] = useState<number>(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
   return (
     <>
       {" "}
       {/* Home first Section */}
-      <div className="bg-Pink text-center pt-[30px] px-[24px] pb-10">
+      <div className="bg-Pink text-center pt-[30px] px-[24px] pb-10 md:px-[50px]">
         <div className="flex justify-center items-center flex-col gap-5">
           <p className="text-Rojo font-Recoleta text-5xl">
-            connecting people who’ve been through{" "}
-            <span className="text-white">similar health experiences </span>
+            connecting people who’ve been through
+            <span className="text-white"> similar health experiences </span>
           </p>
-          <MainButton
-            text="find a budi"
-            bgColor="bg-Jet"
-            link="/budi/findabudi"
-          />
-          <MainButton text="be a budi" bgColor="bg-Jet" link="/budi/beabudi" />
+          <div className="flex justify-center items-center flex-col gap-5 md:flex-row md:items-start md:justify-between w-full md:gap-0">
+            <MainButton
+              text="find a budi"
+              bgColor="bg-Jet md:bg-Rojo"
+              link="/budi/findabudi"
+            />
+            <MainButton
+              text="be a budi"
+              bgColor="bg-Jet md:bg-Rojo"
+              link="/budi/beabudi"
+            />
+          </div>
         </div>
       </div>
       {/* Home second Section */}
-      <div className="bg-SeaShell text-center pt-[30px] px-[24px] pb-10">
+      <div className="bg-SeaShell text-center pt-[30px] px-[24px] pb-10 md:px-[50px]">
         <div className="flex justify-center items-center flex-col gap-5">
           <p className="text-Thistle font-Recoleta text-5xl">
             <span className="text-Rojo">together </span>
             we are stronger
           </p>
-          <MainButton text="ENDOMETRIOSIS" bgColor="bg-Rojo" link="/" />
-          <MainButton text="HYSTERECTOMY" bgColor="bg-Rojo" link="" />
-          <MainButton text="PCOS" bgColor="bg-Rojo" link="" />
-          <MainButton text="EARLY MENOPAUSE" bgColor="bg-Rojo" link="" />
-          <MainButton text="CANCER DIAGNOSIS" bgColor="bg-Rojo" link="" />
-          <p>
-            Connecting people who have been through similar health experiences
-            so those feeling alone and confused can find a friend.{" "}
-            <span className="font-bold">
-              Together we can find the strength and support to shine.{" "}
-            </span>
-          </p>
+          <Illness />
+
+          {width >= 768 ? (
+            <div className="flex justify-center items-center flex-col gap-5">
+              <p>
+                A health diagnosis can be a lonely place.{" "}
+                <span className="font-bold">
+                  budi connects you to a friend who’s been through it{" "}
+                </span>{" "}
+                too. With support, we find the strength to shine.
+              </p>
+              <MainButton text="read our story" bgColor="bg-Rojo" link="" />
+            </div>
+          ) : (
+            <p>
+              Connecting people who have been through similar health experiences
+              so those feeling alone and confused can find a friend.{" "}
+              <span className="font-bold">
+                Together we can find the strength and support to shine.{" "}
+              </span>
+            </p>
+          )}
         </div>
       </div>
       {/*Home third Section */}
-      <div className="bg-Thistle text-center pt-[30px] px-[24px] pb-10">
+      <div className="bg-Thistle text-center pt-[30px] px-[24px] pb-10 md:px-[50px]">
         <div className="flex justify-center items-center flex-col gap-5">
           <p className="text-Rojo font-Recoleta text-5xl"> our vision</p>
-          <p>
+          <p className="md:text-white">
             Many people leave hospitals and doctors’ offices feeling confused
             and isolated, often resorting to impersonal online searches for
             answers. <br /> <br />
@@ -65,16 +96,22 @@ export default function Home() {
               no one faces health challenges alone.
             </span>
           </p>
-          <MainButton
-            text="find a budi"
-            bgColor="bg-Jet"
-            link="/budi/findabudi"
-          />
-          <MainButton text="be a budi" bgColor="bg-Jet" link="/budi/beabudi" />
+          <div className="flex justify-center items-center flex-col gap-5 md:justify-between md:flex-row w-full">
+            <MainButton
+              text="find a budi"
+              bgColor="bg-Jet md:bg-Rojo"
+              link="/budi/findabudi"
+            />
+            <MainButton
+              text="be a budi"
+              bgColor="bg-Jet md:bg-Rojo"
+              link="/budi/beabudi"
+            />
+          </div>
         </div>
       </div>
       {/*Home newsletter Section */}
-      <div className="bg-SeaShell text-center pt-[30px] px-[24px] pb-10">
+      <div className="bg-SeaShell text-center pt-[30px] px-[24px] pb-10 md:px-[50px]">
         <div className="flex justify-center items-center flex-col gap-5">
           <p className="text-Thistle font-Recoleta text-5xl">
             our amazing <span className="text-Rojo">sponsors</span>
