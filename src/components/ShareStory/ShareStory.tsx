@@ -37,13 +37,13 @@ export default function ShareStory() {
           might be going through the same thing
         </p>
       </div>
-      <form className="flex justify-start items-center flex-col mt-10 md:px-[50px]">
+      <form className="flex justify-start items-center flex-col mt-10 md:px-[50px] lg:items-start">
         <label className="text-Rojo font-Recoleta text-2xl">name</label>
         <input
           type="text"
           value={name}
           onChange={(e) => setName(e.target.value)}
-          className="w-full rounded-xl bg-white py-2 border-black border"
+          className="w-full rounded-xl bg-white py-2 border-black border lg:w-[70%]"
         />
         <br />
         <br />
@@ -52,7 +52,7 @@ export default function ShareStory() {
           type="text"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          className="w-full rounded-xl bg-white py-2 border-black border"
+          className="w-full rounded-xl bg-white py-2 border-black border lg:w-[70%]"
         />
         <br />
         <br />
@@ -60,7 +60,7 @@ export default function ShareStory() {
         <textarea
           value={story}
           onChange={(e) => setStory(e.target.value)}
-          className="border-black border h-[341px] mt-5 rounded-xl bg-white p-3 w-full"
+          className="border-black border h-[341px] mt-5 rounded-xl bg-white p-3 w-full lg:w-[70%]"
           cols={cols}
           name="message"
         ></textarea>
