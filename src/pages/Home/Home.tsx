@@ -21,9 +21,9 @@ export default function Home() {
     <>
       {" "}
       {/* Home first Section */}
-      <div className="bg-Pink text-center pt-[30px] px-[24px] pb-10 md:px-[50px]">
+      <div className="bg-Pink text-center pt-[30px] px-[24px] pb-10 md:px-[50px] lg:px-[110px] xl:px-[150px]">
         <div className="flex justify-center items-center flex-col gap-5">
-          <p className="text-Rojo font-Recoleta text-5xl">
+          <p className="text-Rojo font-Recoleta text-5xl lg:text-6xl">
             connecting people who’ve been through
             <span className="text-white"> similar health experiences </span>
           </p>

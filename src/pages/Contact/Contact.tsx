@@ -33,7 +33,7 @@ export default function Contact() {
           </p>
         </div>
       </div>
-      <div className="bg-SeaShell text-center pt-[30px] px-[24px] pb-10 md:px-[50px] ">
+      <div className="bg-SeaShell text-center pt-[30px] px-[24px] pb-10 md:px-[50px]">
         <div className="flex justify-center items-center flex-col gap-5">
           <form>
             <label className="text-Rojo font-Recoleta text-2xl">name</label>
