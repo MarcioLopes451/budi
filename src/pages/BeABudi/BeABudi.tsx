@@ -6,7 +6,7 @@ export default function BeABudi() {
   return (
     <section className="w-full">
       {/* Intro */}
-      <div className="bg-Pink text-center pt-[30px] px-[24px] pb-10 md:px-[50px]">
+      <div className="bg-Pink text-center pt-[30px] px-[24px] pb-10 md:px-[50px] lg:px-[110px]">
         <div className="flex justify-center items-center flex-col gap-5">
           <p className="text-white font-Recoleta text-5xl">
             <span className="text-Rojo">you’re a </span>good person
@@ -23,7 +23,7 @@ export default function BeABudi() {
       </div>
 
       {/* Form */}
-      <div className="bg-SeaShell pt-[30px] px-[24px] pb-10 md:px-[50px]">
+      <div className="bg-SeaShell pt-[30px] px-[24px] pb-10 md:px-[50px] lg:px-[110px]">
         <div className="flex justify-center items-center flex-col gap-5 text-center">
           <label className="text-Rojo font-Recoleta text-3xl">
             firstly, what’s your name?
@@ -38,7 +38,7 @@ export default function BeABudi() {
           <p>Select up to 3</p>
           <select
             id="budi"
-            className="w-full rounded-xl bg-Thistle py-2 border-black border"
+            className="w-full rounded-xl bg-Thistle py-2 border-black border lg:hidden"
           >
             {budioptions.map((option, index) => (
               <option key={index} value={option}>
@@ -46,6 +46,18 @@ export default function BeABudi() {
               </option>
             ))}
           </select>
+          {/* desktop checkbox input */}
+          <div className="hidden lg:grid grid-cols-3 gap-4 p-4">
+            {budioptions.map((option, index) => (
+              <div
+                key={index}
+                className="flex justify-start items-center gap-2"
+              >
+                <input type="checkbox" value={option} />
+                <p className="text-xs">{option}</p>
+              </div>
+            ))}
+          </div>
           <label className="text-Rojo font-Recoleta text-3xl">
             not on there?
           </label>
@@ -58,7 +70,7 @@ export default function BeABudi() {
       </div>
 
       {/* Location form */}
-      <div className="bg-Pink text-center pt-[30px] px-[24px] pb-10 md:px-[50px]">
+      <div className="bg-Pink text-center pt-[30px] px-[24px] pb-10 md:px-[50px] lg:px-[110px]">
         <div className="flex justify-center items-center flex-col gap-5 text-center">
           <label className="text-Rojo font-Recoleta text-3xl">
             where are you based?
@@ -70,7 +82,7 @@ export default function BeABudi() {
           </p>
           <select
             id="locations"
-            className="w-full rounded-xl bg-Thistle py-2 border-black border"
+            className="w-full rounded-xl bg-Thistle py-2 border-black border lg:hidden"
           >
             {locationOptions.map((option, index) => (
               <option key={index} value={option}>
@@ -78,11 +90,22 @@ export default function BeABudi() {
               </option>
             ))}
           </select>
+          <div className=" hidden lg:grid grid-cols-3 gap-4 p-4">
+            {locationOptions.map((option, index) => (
+              <div
+                key={index}
+                className="flex justify-start items-center gap-2"
+              >
+                <input type="checkbox" value={option} />
+                <p className="text-xs">{option}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
 
       {/* Email Form */}
-      <div className="bg-SeaShell pt-[30px] px-[24px] pb-10 md:px-[50px]">
+      <div className="bg-SeaShell pt-[30px] px-[24px] pb-10 md:px-[50px] lg:px-[110px]">
         <div className="flex justify-center items-center flex-col gap-5 text-center">
           <label className="text-Rojo font-Recoleta text-3xl">
             what’s your email?

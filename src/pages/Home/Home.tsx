@@ -42,7 +42,7 @@ export default function Home() {
         </div>
       </div>
       {/* Home second Section */}
-      <div className="bg-SeaShell text-center pt-[30px] px-[24px] pb-10 md:px-[50px]">
+      <div className="bg-SeaShell text-center pt-[30px] px-[24px] pb-10 md:px-[50px] lg:px-[110px]">
         <div className="flex justify-center items-center flex-col gap-5">
           <p className="text-Thistle font-Recoleta text-5xl">
             <span className="text-Rojo">together </span>
@@ -73,7 +73,7 @@ export default function Home() {
         </div>
       </div>
       {/*Home third Section */}
-      <div className="bg-Thistle text-center pt-[30px] px-[24px] pb-10 md:px-[50px]">
+      <div className="bg-Thistle text-center pt-[30px] px-[24px] pb-10 md:px-[50px] lg:px-[110px]">
         <div className="flex justify-center items-center flex-col gap-5">
           <p className="text-Rojo font-Recoleta text-5xl"> our vision</p>
           <p className="md:text-white">
@@ -111,7 +111,7 @@ export default function Home() {
         </div>
       </div>
       {/*Home newsletter Section */}
-      <div className="bg-SeaShell text-center pt-[30px] px-[24px] pb-10 md:px-[50px]">
+      <div className="bg-SeaShell text-center pt-[30px] px-[24px] pb-10 md:px-[50px] lg:px-[110px]">
         <div className="flex justify-center items-center flex-col gap-5">
           <p className="text-Thistle font-Recoleta text-5xl">
             our amazing <span className="text-Rojo">sponsors</span>

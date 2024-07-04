@@ -10,8 +10,22 @@ import OurStory from "./pages/OurStory/OurStory";
 import Members from "./pages/Members/Members";
 import RealStories from "./pages/RealStories/RealStories";
 import Contact from "./pages/Contact/Contact";
+import { useEffect, useState } from "react";
+import DesktopFooter from "./components/Footer/DesktopFooter";
+useEffect;
 
 function App() {
+  const [width, setWidth] = useState(0);
+
+  const handleWindowResize = () => {
+    setWidth(window.innerWidth);
+  };
+
+  useEffect(() => {
+    handleWindowResize();
+    window.addEventListener("resize", handleWindowResize);
+    return () => window.removeEventListener("resize", handleWindowResize);
+  }, []);
   return (
     <>
       <div className="font-Poppins">
@@ -26,7 +40,7 @@ function App() {
           <Route path="/budi/realstories" element={<RealStories />} />
           <Route path="/budi/contact" element={<Contact />} />
         </Routes>
-        <Footer />
+        {width <= 768 ? <Footer /> : <DesktopFooter />}
       </div>
     </>
   );
