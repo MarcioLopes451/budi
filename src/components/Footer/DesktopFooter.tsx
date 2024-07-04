@@ -3,8 +3,8 @@ import MainButton from "../MainButton/MainButton";
 export default function DesktopFooter() {
   return (
     <div className="bg-SeaShell pt-[30px] pb-10 px-[24px] md:px-[50px] lg:px-[110px]">
-      <div className="flex justify-between items-start gap-5 ">
-        <div className="flex justify-center items-start flex-col gap-2 text-left">
+      <div className="flex justify-between items-start gap-5">
+        <div className="flex justify-center items-start flex-col gap-2 text-left w-[200px]">
           <p className="text-Rojo font-Recoleta text-5xl">about</p>
           <p>budi (reg. XXXXXXX)</p>
           <p>10 Towerfield Road, Shoeburyness, Essex, SS3 9QE</p>
@@ -21,7 +21,7 @@ export default function DesktopFooter() {
           <p>my account</p>
         </div>
         <div>
-          <div className="flex justify-center items-start gap-5 flex-col ">
+          <div className="flex justify-start items-start gap-5 flex-col w-[350px]">
             <p className="text-Rojo font-Recoleta text-5xl">join us</p>
             <input
               type="text"
