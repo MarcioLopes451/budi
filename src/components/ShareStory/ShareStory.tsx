@@ -22,7 +22,7 @@ export default function ShareStory() {
     };
   }, []);
   return (
-    <div className="bg-Pink text-center pt-[30px] px-[24px] pb-10 md:px-[50px]">
+    <div className="bg-Pink text-center pt-[30px] px-[24px] pb-10 md:px-[50px] lg:px-[110px] xl:px-[150px]">
       <div className="flex justify-center items-center flex-col gap-5">
         <p className="text-Rojo font-Recoleta text-5xl">share your story</p>
         <p className="text-white">
@@ -39,11 +39,12 @@ export default function ShareStory() {
       </div>
       <form className="flex justify-start items-center flex-col mt-10 md:px-[50px] lg:items-start">
         <label className="text-Rojo font-Recoleta text-2xl">name</label>
+        <br />
         <input
           type="text"
           value={name}
           onChange={(e) => setName(e.target.value)}
-          className="w-full rounded-xl bg-white py-2 border-black border lg:w-[70%]"
+          className="w-full rounded-xl bg-white py-2 border-black border lg:w-[70%] xl:w-[55%]"
         />
         <br />
         <br />
@@ -52,7 +53,7 @@ export default function ShareStory() {
           type="text"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          className="w-full rounded-xl bg-white py-2 border-black border lg:w-[70%]"
+          className="w-full rounded-xl bg-white py-2 border-black border lg:w-[70%] xl:w-[55%]"
         />
         <br />
         <br />
@@ -60,7 +61,7 @@ export default function ShareStory() {
         <textarea
           value={story}
           onChange={(e) => setStory(e.target.value)}
-          className="border-black border h-[341px] mt-5 rounded-xl bg-white p-3 w-full lg:w-[70%]"
+          className="border-black border h-[341px] mt-5 rounded-xl bg-white p-3 w-full lg:w-[70%] xl:w-[55%]"
           cols={cols}
           name="message"
         ></textarea>

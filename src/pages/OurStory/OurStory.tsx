@@ -5,7 +5,7 @@ import CEOImg2 from "../../images/ceo img.jpg";
 export default function OurStory() {
   return (
     <section className="w-full">
-      <div className="bg-Pink text-center pt-[30px] px-[24px] pb-10 md:px-[50px] lg:px-[110px] lg:h-[400px]">
+      <div className="bg-Pink text-center pt-[30px] px-[24px] pb-10 md:px-[50px] lg:px-[110px] lg:h-[400px] xl:px-[150px]">
         <div className="flex justify-center items-center flex-col gap-5">
           <p className="text-white font-Recoleta text-5xl">
             <span className="text-Rojo"> hey</span> i’m rachel
@@ -19,14 +19,14 @@ export default function OurStory() {
           <img src={CEOImg} className="rounded-xl md:w-[75%] lg:hidden" />
         </div>
       </div>
-      <div className="bg-SeaShell pt-[50px] px-[24px] pb-10 -mt-20 md:px-[50px] lg:-mt-0 lg:px-[110px]">
+      <div className="bg-SeaShell pt-[50px] px-[24px] pb-10 -mt-20 md:px-[50px] lg:-mt-0 lg:px-[110px] xl:px-[150px]">
         <div className="flex justify-center items-center flex-col gap-5 text-center">
           <div className="lg:flex justify-center items-center lg:-mt-[250px] gap-10 ">
             <img
               src={CEOImg2}
               className="hidden lg:block lg:rounded-xl md:w-[350px]"
             />
-            <div className="flex justify-center items-center flex-col gap-5 lg:gap-0 mt-16">
+            <div className="flex justify-center items-center flex-col gap-5 lg:gap-0 mt-16 ">
               <p className="lg:text-white">
                 ...but i haven’t let it hold me back. Instead i decided i would
                 support others going through these taboo women’s health issues,
@@ -57,7 +57,7 @@ export default function OurStory() {
         </div>
       </div>
 
-      <div className="bg-Thistle text-center pt-[30px] px-[24px] pb-10 md:px-[50px] lg:px-[110px]">
+      <div className="bg-Thistle text-center pt-[30px] px-[24px] pb-10 md:px-[50px] lg:px-[110px] xl:px-[150px]">
         <div className="flex justify-center items-center flex-col gap-5">
           <p className="text-white font-Recoleta text-5xl">
             <span className="text-Rojo">support</span> from me
@@ -66,7 +66,7 @@ export default function OurStory() {
             I blog and TikTok a lot on my health experiences, which you can find
             here. Come say hi!
           </p>
-          <div className="flex justify-center items-center flex-col gap-5 md:justify-between md:flex-row w-full">
+          <div className="flex justify-center items-center flex-col gap-5 md:justify-between md:flex-row w-full xl:px-[150px]">
             <MainButton
               text="tiktok"
               bgColor="bg-Rojo"

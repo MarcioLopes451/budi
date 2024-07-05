@@ -7,7 +7,7 @@ export default function FindABudi() {
     <section className="w-full">
       {/* Intro */}
       <div className="bg-Pink text-center pt-[30px] px-[24px] pb-10 md:px-[50px] lg:px-[110px]">
-        <div className="flex justify-center items-center flex-col gap-5">
+        <div className="flex justify-center items-center flex-col gap-5 xl:px-[150px]">
           <p className="text-white font-Recoleta text-5xl lg:text-6xl">
             <span className="text-Rojo">let’s find</span> you a budi
           </p>
@@ -22,7 +22,7 @@ export default function FindABudi() {
       </div>
 
       {/* Form */}
-      <div className="bg-SeaShell pt-[30px] px-[24px] pb-10 md:px-[50px] lg:px-[110px]">
+      <div className="bg-SeaShell pt-[30px] px-[24px] pb-10 md:px-[50px] lg:px-[110px] xl:px-[150px]">
         <div className="flex justify-center items-center flex-col gap-5 text-center">
           <label className="text-Rojo font-Recoleta text-3xl">
             firstly, what’s your name?
@@ -70,7 +70,7 @@ export default function FindABudi() {
       </div>
 
       {/* Location form */}
-      <div className="bg-Pink text-center pt-[30px] px-[24px] pb-10 md:px-[50px] lg:px-[110px]">
+      <div className="bg-Pink text-center pt-[30px] px-[24px] pb-10 md:px-[50px] lg:px-[110px] xl:px-[150px]">
         <div className="flex justify-center items-center flex-col gap-5 text-center">
           <label className="text-Rojo font-Recoleta text-3xl">
             where are you based?
@@ -105,7 +105,7 @@ export default function FindABudi() {
       </div>
 
       {/* Email Form */}
-      <div className="bg-SeaShell pt-[30px] px-[24px] pb-10 md:px-[50px] lg:px-[110px]">
+      <div className="bg-SeaShell pt-[30px] px-[24px] pb-10 md:px-[50px] lg:px-[110px] xl:px-[150px]">
         <div className="flex justify-center items-center flex-col gap-5 text-center">
           <label className="text-Rojo font-Recoleta text-3xl">
             what’s your email?

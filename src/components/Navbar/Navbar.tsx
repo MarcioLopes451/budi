@@ -23,7 +23,7 @@ export default function Navbar() {
         />
       </div>
       <div className="mt-5">
-        <div className="hidden lg:flex justify-between items-center gap-5 w-full">
+        <div className="hidden lg:flex justify-between items-center gap-5 w-full xl:px-[130px]">
           <Link to="/budi/">what we do</Link>
           <Link to="/budi/findabudi">find a budi</Link>
           <Link to="/budi/beabudi">be a budi</Link>

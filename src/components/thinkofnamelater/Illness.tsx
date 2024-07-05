@@ -18,7 +18,7 @@ export default function Illness() {
   return (
     <div>
       {width >= 768 ? (
-        <div className="flex justify-center items-center flex-col gap-5 md:flex-row md:items-center md:justify-center w-full flex-wrap md:gap-x-40">
+        <div className="flex justify-center items-center gap-x-[50px] gap-y-8 flex-row w-full flex-wrap mt-5">
           <MainButton
             text="ENDOMETRIOSIS"
             bgColor="bg-Rojo md:bg-Pink"

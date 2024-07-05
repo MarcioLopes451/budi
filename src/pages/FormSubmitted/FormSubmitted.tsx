@@ -3,8 +3,8 @@ import MainButton from "../../components/MainButton/MainButton";
 export default function FormSubmitted() {
   return (
     <section className="w-full">
-      <div className="bg-Pink text-center pt-[30px] px-[24px] pb-10 md:px-[50px]">
-        <div className="flex justify-center items-center flex-col gap-5">
+      <div className="bg-Pink text-center pt-[30px] px-[24px] pb-10 md:px-[50px] lg:px-[110px] xl:px-[150px]">
+        <div className="flex justify-center items-center flex-col gap-5 xl:px-[150px]">
           <p className="text-white font-Recoleta text-5xl">
             <span className="text-Rojo">thank you</span> so much
           </p>
@@ -19,7 +19,7 @@ export default function FormSubmitted() {
           </div>
         </div>
       </div>
-      <div className="bg-SeaShell text-center pt-[30px] px-[24px] pb-10">
+      <div className="bg-SeaShell text-center pt-[30px] px-[24px] pb-10 md:px-[50px] lg:px-[110px] xl:px-[150px]">
         <div className="flex justify-center items-center flex-col gap-5">
           <p className="text-Rojo font-Recoleta text-5xl">
             {" "}
@@ -31,6 +31,10 @@ export default function FormSubmitted() {
             offers from female wellness brands, hormone hacks and women’s health
             events.
           </p>
+          <input
+            type="text"
+            className="w-full rounded-xl bg-Thistle py-2 border-black border"
+          />
           <label>
             {" "}
             <input type="checkbox" name="checkbox" id="checkbox" />

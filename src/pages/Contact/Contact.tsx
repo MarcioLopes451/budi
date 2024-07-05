@@ -33,41 +33,42 @@ export default function Contact() {
           </p>
         </div>
       </div>
-      <div className="bg-SeaShell text-center pt-[30px] px-[24px] pb-10 md:px-[50px]">
-        <div className="flex justify-center items-center flex-col gap-5">
+      <div className="bg-SeaShell text-center pt-[30px] px-[24px] pb-10 md:px-[50px] xl:text-left xl:px-[150px]">
+        <div className="flex justify-center items-center flex-col gap-5 xl:items-start">
           <form>
             <label className="text-Rojo font-Recoleta text-2xl">name</label>
+            <br />
             <input
               type="text"
               value={name}
               onChange={(e) => setName(e.target.value)}
-              className="w-full rounded-xl bg-Thistle py-2 border-black border"
+              className="w-full rounded-xl bg-Thistle py-2 border-black border xl:w-[80%]"
             />
             <br />
             <br />
             <label className="text-Rojo font-Recoleta text-2xl">email</label>
+            <br />
             <input
               type="text"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="w-full rounded-xl bg-Thistle py-2 border-black border"
+              className="w-full rounded-xl bg-Thistle py-2 border-black border xl:w-[80%]"
             />
             <br />
             <br />
-            <label className="text-Rojo font-Recoleta text-2xl">
-              your story
-            </label>
+            <label className="text-Rojo font-Recoleta text-2xl">message</label>
+            <br />
             <textarea
               value={story}
               onChange={(e) => setStory(e.target.value)}
-              className="border-black border h-[341px] mt-5 rounded-xl bg-Thistle p-3 w-full"
+              className="border-black border h-[341px] mt-5 rounded-xl bg-Thistle p-3 w-full xl:w-[80%]"
               cols={cols}
               name="message"
             ></textarea>
 
             <br />
             <br />
-            <div className="flex justify-center items-center">
+            <div className="flex justify-center items-center xl:justify-start">
               <MainButton text="send" bgColor="bg-Rojo" link="" />
             </div>
           </form>
