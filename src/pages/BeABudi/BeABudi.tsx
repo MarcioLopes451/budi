@@ -47,7 +47,7 @@ export default function BeABudi() {
             ))}
           </select>
           {/* desktop checkbox input */}
-          <div className="hidden lg:grid grid-cols-3 gap-4 p-4">
+          <div className="hidden lg:grid grid-cols-3 gap-4 p-4 w-full xl:px-[150px]">
             {budioptions.map((option, index) => (
               <div
                 key={index}
@@ -90,7 +90,7 @@ export default function BeABudi() {
               </option>
             ))}
           </select>
-          <div className=" hidden lg:grid grid-cols-3 gap-4 p-4">
+          <div className=" hidden lg:grid grid-cols-3 gap-4 p-4 w-full xl:px-[150px]">
             {locationOptions.map((option, index) => (
               <div
                 key={index}

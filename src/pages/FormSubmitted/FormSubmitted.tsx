@@ -3,9 +3,9 @@ import MainButton from "../../components/MainButton/MainButton";
 export default function FormSubmitted() {
   return (
     <section className="w-full">
-      <div className="bg-Pink text-center pt-[30px] px-[24px] pb-10 md:px-[50px] lg:px-[110px] xl:px-[150px]">
-        <div className="flex justify-center items-center flex-col gap-5 xl:px-[150px]">
-          <p className="text-white font-Recoleta text-5xl">
+      <div className="bg-Pink text-center pt-[30px] px-[24px] pb-28 md:px-[50px] lg:px-[110px] xl:px-[150px]">
+        <div className="flex justify-center items-center flex-col gap-5 xl:px-[150px] mt-10">
+          <p className="text-white font-Recoleta text-5xl xl:text-6xl">
             <span className="text-Rojo">thank you</span> so much
           </p>
           <p className="text-white">

@@ -5,9 +5,9 @@ import CEOImg2 from "../../images/ceo img.jpg";
 export default function OurStory() {
   return (
     <section className="w-full">
-      <div className="bg-Pink text-center pt-[30px] px-[24px] pb-10 md:px-[50px] lg:px-[110px] lg:h-[400px] xl:px-[150px]">
-        <div className="flex justify-center items-center flex-col gap-5">
-          <p className="text-white font-Recoleta text-5xl">
+      <div className="bg-Pink text-center pt-[30px] px-[24px] pb-10 md:px-[50px] lg:px-[110px] lg:h-[430px] xl:px-[150px]">
+        <div className="flex justify-center items-center flex-col gap-5 xl:px-[150px]">
+          <p className="text-white font-Recoleta text-5xl xl:text-6xl mt-5">
             <span className="text-Rojo"> hey</span> i’m rachel
           </p>
           <p className="text-white">
@@ -20,13 +20,13 @@ export default function OurStory() {
         </div>
       </div>
       <div className="bg-SeaShell pt-[50px] px-[24px] pb-10 -mt-20 md:px-[50px] lg:-mt-0 lg:px-[110px] xl:px-[150px]">
-        <div className="flex justify-center items-center flex-col gap-5 text-center">
+        <div className="flex justify-center items-center flex-col gap-5 text-center ">
           <div className="lg:flex justify-center items-center lg:-mt-[250px] gap-10 ">
             <img
               src={CEOImg2}
               className="hidden lg:block lg:rounded-xl md:w-[350px]"
             />
-            <div className="flex justify-center items-center flex-col gap-5 lg:gap-0 mt-16 ">
+            <div className="flex justify-center items-center flex-col gap-5 lg:gap-0 mt-16">
               <p className="lg:text-white">
                 ...but i haven’t let it hold me back. Instead i decided i would
                 support others going through these taboo women’s health issues,
@@ -39,10 +39,10 @@ export default function OurStory() {
               </p>
             </div>
           </div>
-          <p className="text-Pink font-Recoleta text-5xl lg:mt-10">
+          <p className="text-Pink font-Recoleta text-5xl lg:mt-10 xl:text-6xl">
             <span className="text-Rojo">together</span> we are stronger
           </p>
-          <p>
+          <p className="xl:px-[150px] mt-5">
             The first thing I did when I got a diagnoses for borderline ovarian
             cancer (apart from cry into a pillow for 5-7 days) was google. I
             joined facebook groups, read webMD like it was going out of fashion
@@ -57,7 +57,7 @@ export default function OurStory() {
         </div>
       </div>
 
-      <div className="bg-Thistle text-center pt-[30px] px-[24px] pb-10 md:px-[50px] lg:px-[110px] xl:px-[150px]">
+      <div className="bg-Thistle text-center px-[24px] py-[60px] md:px-[50px] lg:px-[110px] xl:px-[150px]">
         <div className="flex justify-center items-center flex-col gap-5">
           <p className="text-white font-Recoleta text-5xl">
             <span className="text-Rojo">support</span> from me

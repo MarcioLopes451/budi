@@ -31,17 +31,19 @@ const stories = [
 export default function RealStories() {
   return (
     <section className="w-full">
-      <div className="bg-Pink text-center pt-[30px] px-[24px] pb-10 md:px-[50px] lg:px-[110px]">
+      <div className="bg-Pink text-center pt-[30px] px-[24px] pb-20 md:px-[50px] lg:px-[110px] xl:px-[150px]">
         <div className="flex justify-center items-center flex-col gap-5">
-          <p className="text-Rojo font-Recoleta text-5xl">what’s it like?</p>
+          <p className="text-Rojo font-Recoleta text-5xl xl:text-6xl">
+            what’s it like?
+          </p>
           <p className="text-white">
             Wondering ‘what is it like having....’ These are honest, open and
             real life experiences from people who have been there
           </p>
         </div>
       </div>
-      <div className="bg-SeaShell text-center pt-[30px] px-[24px] pb-10 md:px-[50px] lg:px-[110px]">
-        <div className="flex justify-center items-center flex-col gap-5 lg:flex-row flex-wrap lg:justify-between">
+      <div className="bg-SeaShell text-center pt-[30px] px-[24px] pb-10 md:px-[50px] lg:px-[110px] xl:px-[150px] ">
+        <div className="flex justify-center items-center flex-col gap-5 lg:flex-row flex-wrap lg:justify-between xl:px-[150px]">
           {stories.map((story, id) => (
             <div
               key={id}

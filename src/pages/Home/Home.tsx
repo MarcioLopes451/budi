@@ -79,7 +79,7 @@ export default function Home() {
       {/*Home third Section */}
       <div className="bg-Thistle text-center pt-[30px] px-[24px] pb-10 md:px-[50px] lg:px-[110px] xl:px-[150px]">
         <div className="flex justify-center items-center flex-col gap-5 xl:px-[150px]">
-          <p className="text-Rojo font-Recoleta text-5xl xl:text-6xl">
+          <p className="text-Rojo font-Recoleta text-5xl xl:text-8xl">
             {" "}
             our vision
           </p>

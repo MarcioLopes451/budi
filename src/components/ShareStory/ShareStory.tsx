@@ -24,7 +24,9 @@ export default function ShareStory() {
   return (
     <div className="bg-Pink text-center pt-[30px] px-[24px] pb-10 md:px-[50px] lg:px-[110px] xl:px-[150px]">
       <div className="flex justify-center items-center flex-col gap-5">
-        <p className="text-Rojo font-Recoleta text-5xl">share your story</p>
+        <p className="text-Rojo font-Recoleta text-5xl xl:text-6xl">
+          share your story
+        </p>
         <p className="text-white">
           If you would like to share your story to help others see ‘what it’s
           like’ you can fill in the form below.

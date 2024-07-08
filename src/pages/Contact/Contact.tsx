@@ -23,9 +23,9 @@ export default function Contact() {
   }, []);
   return (
     <section className="w-full">
-      <div className="bg-Pink text-center pt-[30px] px-[24px] pb-10 md:px-[50px]">
+      <div className="bg-Pink text-center px-[24px] py-[60px] md:px-[50px]">
         <div className="flex justify-center items-center flex-col gap-5">
-          <p className="text-white font-Recoleta text-5xl">
+          <p className="text-white font-Recoleta text-5xl xl:text-7xl">
             <span className="text-Rojo">contact </span> us
           </p>
           <p className="text-white">
@@ -33,7 +33,7 @@ export default function Contact() {
           </p>
         </div>
       </div>
-      <div className="bg-SeaShell text-center pt-[30px] px-[24px] pb-10 md:px-[50px] xl:text-left xl:px-[150px]">
+      <div className="bg-SeaShell text-center pt-[30px] px-[24px] pb-10 md:px-[50px] xl:text-left xl:px-[150px] flex flex-col xl:flex-row xl:items-start">
         <div className="flex justify-center items-center flex-col gap-5 xl:items-start">
           <form>
             <label className="text-Rojo font-Recoleta text-2xl">name</label>
@@ -72,6 +72,12 @@ export default function Contact() {
               <MainButton text="send" bgColor="bg-Rojo" link="" />
             </div>
           </form>
+        </div>
+        <div className="flex justify-center items-center flex-col gap-2 mt-10">
+          <p>hello@heybudi.co.uk</p>
+          <p>07791036497</p>
+          <p>10 Towerfield Road, Essex, SS3 9QE</p>
+          <div></div>
         </div>
       </div>
     </section>
