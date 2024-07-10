@@ -1,4 +1,4 @@
-export const budioptions = [
+export const budioptions: string[] = [
     "Endometrosis diagnosis",
     "Cancer diagnosis",
     "Breast cancer",
@@ -19,7 +19,7 @@ export const budioptions = [
     "Adenomyosis",
   ];
   
-  export const locationOptions = [
+  export const locationOptions: string[] = [
     "South East",
     "Scotland",
     "South West",

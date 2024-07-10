@@ -12,7 +12,7 @@ export default function Navbar() {
     setOpen(!open);
   };
   return (
-    <div className="bg-SeaShell h-[120px] px-[24px] pt-[30px] md:px-[50px] w-full lg:h-[150px] lg:px-[110px] xl:px-[150px]">
+    <div className="bg-SeaShell h-[120px] px-[24px] pt-[30px] md:px-[50px] w-full lg:h-[150px] lg:px-[110px] xl:px-[150px] fixed">
       <div className="flex justify-between items-center lg:justify-center">
         <img src={UserImg} className="w-[40px] lg:hidden" />
         <img src={Logo} className="w-[110px]" />

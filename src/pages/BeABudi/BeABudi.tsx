@@ -1,8 +1,26 @@
+import { useState } from "react";
 import MainButton from "../../components/MainButton/MainButton";
-import { budioptions } from "../../data/data";
-import { locationOptions } from "../../data/data";
+import CustomCheckbox from "../../components/CustomCheckbox/CustomCheckbox";
+import { budioptions, locationOptions } from "../../data/data";
 
 export default function BeABudi() {
+  const [checkedBudi, setCheckedBudi] = useState<boolean[]>(
+    new Array(budioptions.length).fill(false)
+  );
+  const [checkedLocation, setCheckedLocation] = useState<boolean[]>(
+    new Array(locationOptions.length).fill(false)
+  );
+
+  const handleCheckboxBudiChange = (index: number) => {
+    const updatedCheckedState = [...checkedBudi];
+    updatedCheckedState[index] = !updatedCheckedState[index];
+    setCheckedBudi(updatedCheckedState);
+  };
+  const handleCheckboxLocationChange = (index: number) => {
+    const updatedCheckedState = [...checkedLocation];
+    updatedCheckedState[index] = !updatedCheckedState[index];
+    setCheckedLocation(updatedCheckedState);
+  };
   return (
     <section className="w-full">
       {/* Intro */}
@@ -53,7 +71,13 @@ export default function BeABudi() {
                 key={index}
                 className="flex justify-start items-center gap-2"
               >
-                <input type="checkbox" value={option} />
+                <CustomCheckbox
+                  bgColor="bg-Thistle"
+                  checkmarkColor="text-white"
+                  checked={checkedBudi[index]}
+                  onChange={() => handleCheckboxBudiChange(index)}
+                  id={`custom-checkbox-${index}`}
+                />
                 <p className="text-xs">{option}</p>
               </div>
             ))}
@@ -96,7 +120,13 @@ export default function BeABudi() {
                 key={index}
                 className="flex justify-start items-center gap-2"
               >
-                <input type="checkbox" value={option} />
+                <CustomCheckbox
+                  bgColor="bg-white"
+                  checkmarkColor="text-Thistle"
+                  checked={checkedLocation[index]}
+                  onChange={() => handleCheckboxLocationChange(index)}
+                  id={`custom-checkbox-location-${index}`}
+                />
                 <p className="text-xs">{option}</p>
               </div>
             ))}

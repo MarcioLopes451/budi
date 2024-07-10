@@ -30,16 +30,18 @@ function App() {
     <>
       <div className="font-Poppins">
         <Navbar />
-        <Routes>
-          <Route path="/budi/" element={<Home />} />
-          <Route path="/budi/findabudi" element={<FindABudi />} />
-          <Route path="/budi/beabudi" element={<BeABudi />} />
-          <Route path="/budi/formsubmitted" element={<FormSubmitted />} />
-          <Route path="/budi/ourstory" element={<OurStory />} />
-          <Route path="/budi/members" element={<Members />} />
-          <Route path="/budi/realstories" element={<RealStories />} />
-          <Route path="/budi/contact" element={<Contact />} />
-        </Routes>
+        <div className="pt-[120px] lg:pt-[149px]">
+          <Routes>
+            <Route path="/budi/" element={<Home />} />
+            <Route path="/budi/findabudi" element={<FindABudi />} />
+            <Route path="/budi/beabudi" element={<BeABudi />} />
+            <Route path="/budi/formsubmitted" element={<FormSubmitted />} />
+            <Route path="/budi/ourstory" element={<OurStory />} />
+            <Route path="/budi/members" element={<Members />} />
+            <Route path="/budi/realstories" element={<RealStories />} />
+            <Route path="/budi/contact" element={<Contact />} />
+          </Routes>
+        </div>
         {width <= 768 ? <Footer /> : <DesktopFooter />}
       </div>
     </>
