@@ -1,3 +1,4 @@
+import CustomCheckbox2 from "../CustomCheckbox/CustomCheckbox2";
 import MainButton from "../MainButton/MainButton";
 
 export default function DesktopFooter() {
@@ -27,17 +28,15 @@ export default function DesktopFooter() {
               type="text"
               className="w-[300px] rounded-xl bg-Thistle py-2 border-black border"
             />
-            <label>
+            <div className="flex justify-start items-start gap-2">
               {" "}
-              <input
-                type="checkbox"
-                name="checkbox"
-                id="checkbox"
-                className="accent-Thistle"
+              <CustomCheckbox2
+                bgColor="bg-Thistle"
+                checkmarkColor="text-white"
               />
               I’m happy to hear from budi (we won’t share your data with anyone
               else)
-            </label>
+            </div>
             <MainButton text="join now" bgColor="bg-Rojo" link="/" />
           </div>
         </div>

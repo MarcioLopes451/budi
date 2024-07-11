@@ -19,9 +19,9 @@ export default function FormSubmitted() {
           </div>
         </div>
       </div>
-      <div className="bg-SeaShell text-center pt-[30px] px-[24px] pb-10 md:px-[50px] lg:px-[110px] xl:px-[150px]">
-        <div className="flex justify-center items-center flex-col gap-5">
-          <p className="text-Rojo font-Recoleta text-5xl">
+      <div className="bg-SeaShell text-center pt-[30px] px-[24px] pb-10 md:px-[50px] lg:px-[110px] xl:py-20">
+        <div className="flex justify-center items-center flex-col gap-5 xl:px-[150px]">
+          <p className="text-Rojo font-Recoleta text-5xl xl:text-6xl">
             {" "}
             join our community
           </p>
@@ -33,7 +33,7 @@ export default function FormSubmitted() {
           </p>
           <input
             type="text"
-            className="w-full rounded-xl bg-Thistle py-2 border-black border"
+            className="w-full rounded-[20px] bg-Thistle py-2 border-black border xl:h-[70px]"
           />
           <label>
             {" "}

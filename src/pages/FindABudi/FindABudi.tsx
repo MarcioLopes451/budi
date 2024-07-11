@@ -2,6 +2,7 @@ import { useState } from "react";
 import CustomCheckbox from "../../components/CustomCheckbox/CustomCheckbox";
 import MainButton from "../../components/MainButton/MainButton";
 import { budioptions, locationOptions } from "../../data/data";
+import CustomCheckbox2 from "../../components/CustomCheckbox/CustomCheckbox2";
 
 export default function FindABudi() {
   const [checkedBudi, setCheckedBudi] = useState<boolean[]>(
@@ -147,12 +148,12 @@ export default function FindABudi() {
             type="text"
             className="w-full rounded-[20px] bg-Thistle py-2 border-black border xl:h-[70px]"
           />
-          <label>
+          <div className="flex justify-start items-center gap-2">
             {" "}
-            <input type="checkbox" name="checkbox" id="checkbox" />
+            <CustomCheckbox2 bgColor="bg-Thistle" checkmarkColor="text-white" />
             Happy to hear from our sister company Our Remedy a female focused
             wellness brand?
-          </label>
+          </div>
           <MainButton
             text="find my budi!"
             bgColor="bg-Rojo"

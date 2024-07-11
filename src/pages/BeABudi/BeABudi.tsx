@@ -2,6 +2,7 @@ import { useState } from "react";
 import MainButton from "../../components/MainButton/MainButton";
 import CustomCheckbox from "../../components/CustomCheckbox/CustomCheckbox";
 import { budioptions, locationOptions } from "../../data/data";
+import CustomCheckbox2 from "../../components/CustomCheckbox/CustomCheckbox2";
 
 export default function BeABudi() {
   const [checkedBudi, setCheckedBudi] = useState<boolean[]>(
@@ -24,9 +25,9 @@ export default function BeABudi() {
   return (
     <section className="w-full">
       {/* Intro */}
-      <div className="bg-Pink text-center pt-[30px] px-[24px] pb-10 md:px-[50px] lg:px-[110px]">
+      <div className="bg-Pink text-center pt-[30px] px-[24px] pb-10 md:px-[50px] lg:px-[110px] xl:py-20">
         <div className="flex justify-center items-center flex-col gap-5 xl:px-[150px]">
-          <p className="text-white font-Recoleta text-5xl">
+          <p className="text-white font-Recoleta text-5xl lg:text-6xl">
             <span className="text-Rojo">you’re a </span>good person
           </p>
           <p className="text-white">
@@ -41,16 +42,16 @@ export default function BeABudi() {
       </div>
 
       {/* Form */}
-      <div className="bg-SeaShell pt-[30px] px-[24px] pb-10 md:px-[50px] lg:px-[110px] xl:px-[150px]">
+      <div className="bg-SeaShell pt-[30px] px-[24px] pb-10 md:px-[50px] lg:px-[110px] xl:px-[150px] xl:py-20">
         <div className="flex justify-center items-center flex-col gap-5 text-center">
-          <label className="text-Rojo font-Recoleta text-3xl">
+          <label className="text-Rojo font-Recoleta text-3xl xl:text-[44px]">
             firstly, what’s your name?
           </label>
           <input
             type="text"
-            className="w-full rounded-xl bg-Thistle py-2 border-black border"
+            className="w-full rounded-[20px] bg-Thistle py-2 border-black border xl:h-[70px]"
           />
-          <label className="text-Rojo font-Recoleta text-3xl">
+          <label className="text-Rojo font-Recoleta text-3xl xl:text-[44px] xl:mt-10">
             what experience do you have that could help someone?
           </label>
           <p>Select up to 3</p>
@@ -82,13 +83,13 @@ export default function BeABudi() {
               </div>
             ))}
           </div>
-          <label className="text-Rojo font-Recoleta text-3xl">
+          <label className="text-Rojo font-Recoleta text-3xl xl:text-[44px] xl:mt-10">
             not on there?
           </label>
           <p>let us know, it could still be really helpful to someone</p>
           <input
             type="text"
-            className="w-full rounded-xl bg-Thistle py-2 border-black border"
+            className="w-full rounded-[20px] bg-Thistle py-2 border-black border xl:h-[70px]"
           />
         </div>
       </div>
@@ -96,7 +97,7 @@ export default function BeABudi() {
       {/* Location form */}
       <div className="bg-Pink text-center pt-[30px] px-[24px] pb-10 md:px-[50px] lg:px-[110px] xl:px-[150px]">
         <div className="flex justify-center items-center flex-col gap-5 text-center">
-          <label className="text-Rojo font-Recoleta text-3xl">
+          <label className="text-Rojo font-Recoleta text-3xl xl:text-[44px] xl:mt-10">
             where are you based?
           </label>
           <p className="text-white">
@@ -114,7 +115,7 @@ export default function BeABudi() {
               </option>
             ))}
           </select>
-          <div className=" hidden lg:grid grid-cols-3 gap-4 p-4 w-full xl:px-[150px]">
+          <div className="hidden lg:grid grid-cols-3 gap-4 p-4 w-full xl:px-[150px]">
             {locationOptions.map((option, index) => (
               <div
                 key={index}
@@ -137,20 +138,20 @@ export default function BeABudi() {
       {/* Email Form */}
       <div className="bg-SeaShell pt-[30px] px-[24px] pb-10 md:px-[50px] lg:px-[110px] xl:px-[150px]">
         <div className="flex justify-center items-center flex-col gap-5 text-center">
-          <label className="text-Rojo font-Recoleta text-3xl">
+          <label className="text-Rojo font-Recoleta text-3xl xl:text-[44px] xl:mt-10">
             what’s your email?
           </label>
           <p>We’ll contact you when we find the perfect budi for you</p>
           <input
             type="text"
-            className="w-full rounded-xl bg-Thistle py-2 border-black border"
+            className="w-full rounded-[20px] bg-Thistle py-2 border-black border xl:h-[70px]"
           />
-          <label>
+          <div className="flex justify-start items-center gap-2">
             {" "}
-            <input type="checkbox" name="checkbox" id="checkbox" />
+            <CustomCheckbox2 bgColor="bg-Thistle" checkmarkColor="text-white" />
             Happy to hear from our sister company Our Remedy a female focused
             wellness brand?
-          </label>
+          </div>
           <MainButton
             text="be a budi!"
             bgColor="bg-Rojo"

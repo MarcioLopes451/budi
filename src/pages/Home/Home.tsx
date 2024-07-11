@@ -1,3 +1,4 @@
+import CustomCheckbox2 from "../../components/CustomCheckbox/CustomCheckbox2";
 import MainButton from "../../components/MainButton/MainButton";
 import Illness from "../../components/thinkofnamelater/Illness";
 import OurRemedyImg from "../../images/Logo_dark purple_website.png";
@@ -135,12 +136,12 @@ export default function Home() {
             type="text"
             className="w-full rounded-xl bg-Thistle py-2 border-black border"
           />
-          <label>
+          <div className="flex justify-start items-center gap-2">
             {" "}
-            <input type="checkbox" name="checkbox" id="checkbox" />
+            <CustomCheckbox2 bgColor="bg-Thistle" checkmarkColor="text-white" />
             I’m happy to hear from budi (we won’t share your data with anyone
             else)
-          </label>
+          </div>
           <MainButton text="join now" bgColor="bg-Rojo" link="" />
         </div>
       </div>
