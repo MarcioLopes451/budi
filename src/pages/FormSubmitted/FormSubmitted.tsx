@@ -1,6 +1,13 @@
+import { useState } from "react";
+import CustomCheckbox2 from "../../components/CustomCheckbox/CustomCheckbox2";
 import MainButton from "../../components/MainButton/MainButton";
 
 export default function FormSubmitted() {
+  const [checked, setChecked] = useState<boolean>(false);
+
+  const handleCheckboxChange = () => {
+    setChecked(!checked);
+  };
   return (
     <section className="w-full">
       <div className="bg-Pink text-center pt-[30px] px-[24px] pb-28 md:px-[50px] lg:px-[110px] xl:px-[150px]">
@@ -35,12 +42,17 @@ export default function FormSubmitted() {
             type="text"
             className="w-full rounded-[20px] bg-Thistle py-2 border-black border xl:h-[70px]"
           />
-          <label>
+          <div className="flex justify-start items-center gap-2">
             {" "}
-            <input type="checkbox" name="checkbox" id="checkbox" />
+            <CustomCheckbox2
+              bgColor="bg-Thistle"
+              checkmarkColor="text-white"
+              checked={checked}
+              onChange={handleCheckboxChange}
+            />
             I’m happy to hear from budi (we won’t share your data with anyone
             else)
-          </label>
+          </div>
           <MainButton text="join now" bgColor="bg-Rojo" link="/" />
         </div>
       </div>

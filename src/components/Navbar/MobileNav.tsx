@@ -7,7 +7,8 @@ type Nav = {
 
 export default function MobileNav({ isOpen, onClose }: Nav) {
   const closeNav = () => {
-    return onClose();
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+    onClose();
   };
   return isOpen ? (
     <div className="bg-SeaShell mt-[22px] z-50 w-full fixed left-0 pb-10">

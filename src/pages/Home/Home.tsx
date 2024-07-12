@@ -6,6 +6,11 @@ import { useState, useEffect } from "react";
 
 export default function Home() {
   const [width, setWidth] = useState<number>(window.innerWidth);
+  const [checked, setChecked] = useState<boolean>(false);
+
+  const handleCheckboxChange = () => {
+    setChecked(!checked);
+  };
 
   useEffect(() => {
     const handleResize = () => {
@@ -138,7 +143,12 @@ export default function Home() {
           />
           <div className="flex justify-start items-center gap-2">
             {" "}
-            <CustomCheckbox2 bgColor="bg-Thistle" checkmarkColor="text-white" />
+            <CustomCheckbox2
+              bgColor="bg-Thistle"
+              checkmarkColor="text-white"
+              checked={checked}
+              onChange={handleCheckboxChange}
+            />
             I’m happy to hear from budi (we won’t share your data with anyone
             else)
           </div>

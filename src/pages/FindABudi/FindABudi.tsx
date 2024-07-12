@@ -11,6 +11,11 @@ export default function FindABudi() {
   const [checkedLocation, setCheckedLocation] = useState<boolean[]>(
     new Array(locationOptions.length).fill(false)
   );
+  const [checked, setChecked] = useState<boolean>(false);
+
+  const handleCheckboxChange = () => {
+    setChecked(!checked);
+  };
 
   const handleCheckboxBudiChange = (index: number) => {
     const updatedCheckedState = [...checkedBudi];
@@ -150,7 +155,12 @@ export default function FindABudi() {
           />
           <div className="flex justify-start items-center gap-2">
             {" "}
-            <CustomCheckbox2 bgColor="bg-Thistle" checkmarkColor="text-white" />
+            <CustomCheckbox2
+              bgColor="bg-Thistle"
+              checkmarkColor="text-white"
+              checked={checked}
+              onChange={handleCheckboxChange}
+            />
             Happy to hear from our sister company Our Remedy a female focused
             wellness brand?
           </div>

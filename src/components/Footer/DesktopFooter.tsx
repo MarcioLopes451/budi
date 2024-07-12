@@ -1,7 +1,13 @@
+import { useState } from "react";
 import CustomCheckbox2 from "../CustomCheckbox/CustomCheckbox2";
 import MainButton from "../MainButton/MainButton";
 
 export default function DesktopFooter() {
+  const [checked, setChecked] = useState<boolean>(false);
+
+  const handleCheckboxChange = () => {
+    setChecked(!checked);
+  };
   return (
     <div className="bg-SeaShell pt-[30px] pb-10 px-[24px] md:px-[50px] lg:px-[110px]">
       <div className="flex justify-between items-start gap-5">
@@ -33,9 +39,13 @@ export default function DesktopFooter() {
               <CustomCheckbox2
                 bgColor="bg-Thistle"
                 checkmarkColor="text-white"
+                checked={checked}
+                onChange={handleCheckboxChange}
+                border="border"
               />
-              I’m happy to hear from budi (we won’t share your data with anyone
-              else)
+              <p className="-mt-1">
+                I’m happy to hear from budi and Our Remedy
+              </p>
             </div>
             <MainButton text="join now" bgColor="bg-Rojo" link="/" />
           </div>
