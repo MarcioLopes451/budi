@@ -12,6 +12,9 @@ import RealStories from "./pages/RealStories/RealStories";
 import Contact from "./pages/Contact/Contact";
 import { useEffect, useState } from "react";
 import DesktopFooter from "./components/Footer/DesktopFooter";
+import Login from "./pages/Login/Login";
+import Register from "./pages/Register/Register";
+
 useEffect;
 
 function App() {
@@ -39,6 +42,8 @@ function App() {
             <Route path="/budi/ourstory" element={<OurStory />} />
             <Route path="/budi/members" element={<Members />} />
             <Route path="/budi/realstories" element={<RealStories />} />
+            <Route path="/budi/login" element={<Login />} />
+            <Route path="/budi/register" element={<Register />} />
             <Route path="/budi/contact" element={<Contact />} />
           </Routes>
         </div>
