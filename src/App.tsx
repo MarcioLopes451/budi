@@ -15,8 +15,6 @@ import DesktopFooter from "./components/Footer/DesktopFooter";
 import Login from "./pages/Login/Login";
 import Register from "./pages/Register/Register";
 
-useEffect;
-
 function App() {
   const [width, setWidth] = useState(0);
 

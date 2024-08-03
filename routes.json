@@ -1,0 +1,6 @@
+{
+    "/budi/register": "/users",
+    "/budi/login": "/users",
+    "/budi/refresh": "/users"
+  }
+  
