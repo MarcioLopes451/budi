@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { auth, googleProvider } from "../../util/api/firebase";
 import { signInWithEmailAndPassword, signInWithPopup } from "firebase/auth";
 
@@ -7,6 +7,8 @@ export default function Login() {
   const [email, setEmail] = useState<string>("");
   const [password, setPassword] = useState<string>("");
   const [message, setMessage] = useState<string>("");
+
+  const navigate = useNavigate();
 
   const handleSignIn = async () => {
     if (email.trim() === "") {
@@ -16,6 +18,10 @@ export default function Login() {
     } else {
       try {
         await signInWithEmailAndPassword(auth, email, password);
+        setMessage("Login successful");
+        setTimeout(() => {
+          navigate("/budi/");
+        }, 3000);
       } catch (error) {
         setMessage("login details not found");
         console.log(error);
