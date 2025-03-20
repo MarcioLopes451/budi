@@ -1,12 +1,24 @@
 import Logo from "../../images/blackLogo.png";
 import UserImg from "../../images/1564534_customer_man_user_account_profile_icon (1).png";
 import MobileMenuImg from "../../images/4781852_burger_line_list_menu_nav_icon.png";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import MobileNav from "./MobileNav";
 import { Link } from "react-router-dom";
+import { auth } from "../../util/api/firebase";
+import { onAuthStateChanged, User } from "firebase/auth";
 
 export default function Navbar() {
   const [open, setOpen] = useState<boolean>(false);
+  const [user, setUser] = useState<User | null>(null);
+
+  useEffect(() => {
+    const unsubscribe = onAuthStateChanged(auth, (currentUser: User | null) => {
+      setUser(currentUser);
+    });
+
+    // Clean up subscription on unmount
+    return () => unsubscribe();
+  }, []);
 
   const handleClick = () => {
     setOpen(!open);
@@ -21,8 +33,12 @@ export default function Navbar() {
       <div className="flex justify-between items-center lg:justify-center">
         <Link to="/budi/login" onClick={scrollUp}>
           <img src={UserImg} className="w-[40px] lg:hidden" />
+          <p>{user?.email}</p>
         </Link>
-        <img src={Logo} className="w-[110px]" />
+
+        <Link to="/budi/">
+          <img src={Logo} className="w-[110px]" />
+        </Link>
         <img
           src={MobileMenuImg}
           className="w-[40px] lg:hidden"
